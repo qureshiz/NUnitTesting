@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace Calculator.Tests
 {
- [TestFixture]
+    [TestFixture]
+
     public class SimpleCalculatorTests
     {
+
         [Test]
         public void ShouldAddTwoNumbers()
         {
@@ -24,7 +21,6 @@ namespace Calculator.Tests
             var sut = new SimpleCalculator();
             var result = sut.Multiply(2, 3);
             Assert.That(result,Is.EqualTo(6));
-
         }
 
     }
